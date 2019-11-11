@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';// paqueteria de dart para poder usar Widgets
-
+import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/description_place.dart';// paqueteria de dart para poder usar Widgets
+import 'description_place.dart';
 void main() => runApp(MyApp()); // metodo main, usa => que es una lambda,
                                 // que lo siguiente es un Widget ----> MyApp()
 
@@ -27,12 +28,10 @@ class MyApp extends StatelessWidget { // StatelessWidget es la clase padre de lo
         appBar: AppBar(
           title: Text("Hola Mundo"), // ese text es un widged
         ) ,
-        body: Center(
-          child: Text("Hola Mundo")
+        body: new DescriptionPlace("Duwilii Ella", 4, "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga" )
         ),
 
-      )//MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+      );//MyHomePage(title: 'Flutter Demo Home Page'),
   }
 }
 
