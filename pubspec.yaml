@@ -70,8 +70,12 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - asset/img/people.jpg
+
   fonts:
       - family: Lato-Regular #para reconocer la fuente
         fonts:
           - asset: fonts/Lato-Regular.ttf
+
 
