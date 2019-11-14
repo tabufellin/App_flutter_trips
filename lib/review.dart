@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Review extends StatelessWidget {
 
-  String pathImage = "asset/img/people.jpg";
+  String pathImage;
   String name = "Varuna Yass";
   String details = "1 review 5 photos";
   String comment = "There is an amazing place in Sri Lanka";
@@ -52,7 +53,7 @@ class Review extends StatelessWidget {
           left: 20.0
       ),
       child: Text(
-        details,
+        comment,
         textAlign: TextAlign.left,
         style: TextStyle(
             fontSize: 13.0,
@@ -100,7 +101,16 @@ class Review extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         userName,
-        userInfo,
+        Row(
+          children: <Widget>[
+            userInfo,
+            star,
+            star,
+            star_half,
+            star_border,
+            star_border
+          ],
+        ),
         userComment
 
       ],
@@ -129,7 +139,8 @@ class Review extends StatelessWidget {
     // TODO: implement build
     return Row (
       children: <Widget>[
-        photo, userComment, star, star, star, star_half
+        photo,
+        userDetails
 
       ],
     );

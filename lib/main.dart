@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/description_place.dart';// paqueteria de dart para poder usar Widgets
-import 'package:platzi_trips_app/display_all.dart';
+import 'gradient_back.dart';
 import 'description_place.dart';
+import 'review_list.dart';
 void main() => runApp(MyApp()); // metodo main, usa => que es una lambda,
                                 // que lo siguiente es un Widget ----> MyApp()
 
-class MyApp extends StatelessWidget { // StatelessWidget es la clase padre de los Widgets
+class MyApp extends StatelessWidget {// StatelessWidget es la clase padre de los Widgets
                                       // Y creara el Widget que sera nuestra app :)
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -25,12 +26,18 @@ class MyApp extends StatelessWidget { // StatelessWidget es la clase padre de lo
         primarySwatch: Colors.blue,
       ),
       home: Scaffold( // Scaffold es un widget
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace("Duwili palii", 5, "Their could can widen ten she any. As so we smart those money in. Am wrote up whole so tears sense oh. Absolute required of reserved in offering no. How sense found our those gay again taken the. Had mrs outweigh desirous sex overcame. Improved property reserved disposal do offering me. "),
+                ReviewList()
+              ],
 
-        appBar: AppBar(
-          title: Text("Hola Mundo"), // ese text es un widged
-        ) ,
-        body: new DisplayAll(),
-
+            ),
+            GradientBack("Popular")
+          ],
+        ),
       )
     );
       //MyHomePage(title: 'Flutter Demo Home Page'),
