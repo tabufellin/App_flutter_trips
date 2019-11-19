@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'gradient_back.dart';
 import 'description_place.dart';
 import 'review_list.dart';
+import 'header_appbar.dart';
+
+
+
 void main() => runApp(MyApp()); // metodo main, usa => que es una lambda,
                                 // que lo siguiente es un Widget ----> MyApp()
 
@@ -33,9 +36,8 @@ class MyApp extends StatelessWidget {// StatelessWidget es la clase padre de los
                 DescriptionPlace("Duwili palii", 5, "Their could can widen ten she any. As so we smart those money in. Am wrote up whole so tears sense oh. Absolute required of reserved in offering no. How sense found our those gay again taken the. Had mrs outweigh desirous sex overcame. Improved property reserved disposal do offering me. "),
                 ReviewList()
               ],
-
             ),
-            GradientBack("Popular")
+            HeaderAppBar()
           ],
         ),
       )

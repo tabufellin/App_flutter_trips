@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart'; //
+import 'button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
@@ -97,10 +98,13 @@ class DescriptionPlace extends StatelessWidget {
         );
 
     final joinScreen = Column (
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         titleStars,
-        commentary
+        commentary,
+        ButtonPurple("Navigate")
       ],
+
     );
 
 
