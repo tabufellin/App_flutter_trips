@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'review_list.dart';
-import 'header_appbar.dart';
+import 'traveler_trips.dart';
 
 
 
@@ -28,19 +26,7 @@ class MyApp extends StatelessWidget {// StatelessWidget es la clase padre de los
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold( // Scaffold es un widget
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Duwili palii", 5, "Their could can widen ten she any. As so we smart those money in. Am wrote up whole so tears sense oh. Absolute required of reserved in offering no. How sense found our those gay again taken the. Had mrs outweigh desirous sex overcame. Improved property reserved disposal do offering me. "),
-                ReviewList()
-              ],
-            ),
-            HeaderAppBar()
-          ],
-        ),
-      )
+      home: TravelerTrips()
     );
       //MyHomePage(title: 'Flutter Demo Home Page'),
   }
