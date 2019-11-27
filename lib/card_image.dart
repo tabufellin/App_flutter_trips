@@ -12,7 +12,7 @@ class CardImage extends StatelessWidget {
     // TODO: implement build
 
     final card = Container(
-      height: 350.0,
+      height: 300.0,
       width: 250.0,
       margin: EdgeInsets.only(
         top: 80.0,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/traveler_trips_cupertino.dart';
 import 'traveler_trips.dart';
 
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {// StatelessWidget es la clase padre de los
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: TravelerTrips()
+      home: TravelerTripsCupertino()
     );
       //MyHomePage(title: 'Flutter Demo Home Page'),
   }
